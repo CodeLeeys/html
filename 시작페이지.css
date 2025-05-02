@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("배경화면/시작페이지_배경화면.png");
+}
