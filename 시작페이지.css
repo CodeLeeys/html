@@ -7,4 +7,75 @@
     padding: 0;
     height: 100vh;
     background-image: url("배경화면/시작페이지_배경화면.png");
+    background-size: cover;
+}
+.intro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    gap: 40px;
+}
+.intro1{
+}
+.intro1_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+}
+.intro img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(패비콘/커서아이콘.png), auto;
+    transition: transform 0.2s ease;
+}
+.intro img:hover{
+    transform: translateY(-10px);
+}
+.intro2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+a{
+    text-decoration: none;
+}
+.intro2_1{
+    top: 60%;
+    left: 41%;
+    font-size: 2rem;
+    position: fixed;
+    text-align: center;
+    color: #333;
+    font-family: "Nanum Brush Script", cursive;
+}
+.typewriter{
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    font-size: 5rem;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 0;
+    animation:
+    typing 2s steps(18, end) forwards;
+}
+@keyframes typing{
+    from {width: 0}
+    to {width:18ch}
 }
