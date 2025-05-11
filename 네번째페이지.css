@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("배경화면/네번째페이지.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    gap: 40px;
+}
+.intro1{
+}
+.intro1_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 8px;
+}
+.intro img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(패비콘/커서아이콘.png), auto;
+    transition: transform 0.2s ease;
+}
+.intro img:hover{
+    transform: translateY(-10px);
+}
+a{
+    text-decoration: none;
+}
+.intro3{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 900;
+    font-size: 5vh;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+.goal1{
+    position: absolute;
+    top: 22%;
+    left: 48%;
+    color: white;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.goal{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: white;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 500;
+    font-size: 28px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.goal2{
+    display: flex;
+    gap: 270px;
+    margin-left: 100px;
+}
+.goal3{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: -50px;
+}
+goal3>div{
+    width: 250px;
+    text-align: center;
+}
+.goal3_1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.goal2 img.goal2_1{
+    width: 180px;
+    height: 180px;
+}
+.goal2 img.goal2_2{
+    width: 180px;
+    height: 180px;
+}
+.goal2 img.goal2_3{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
