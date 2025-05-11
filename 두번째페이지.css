@@ -69,3 +69,158 @@ a{
     max-height: 100%;
     border-radius: 50%;
 }
+.information{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.information1{
+    border-spacing: 50px 20px;
+    color: white;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 800;
+    font-size: 30px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.information2_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+.icon img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(패비콘/커서아이콘.png), auto;
+    transition: transform 0.2s ease;
+}
+.icon img:hover{
+    transform: translateY(-10px);
+}
+.icon-item{
+    position: relative;
+}
+.postit{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 320px;
+    height: 450px;
+    background-color: blanchedalmond;
+    border: 1px solid #f0e1a0;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    cursor: url(패비콘/커서아이콘.png), auto;
+    transition: transform 0.2s ease;
+    z-index: 20;
+}
+.postit>p{
+    display: flex;
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: flex-start;
+    margin: 0;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit>p:first-child{
+    font-size: 32px;
+}
+.postit img.hobby_4 {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit img.hobby_3{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.hobby_1{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 32px;
+}
+.postit>p.hobby_2{
+    align-items: flex-start;
+    text-align: left;
+    font-size: 20px;
+}
+.icon input[type="checkbox"]:checked ~ .postit {
+display: block;
+}
+.postit img.coffee {
+    width: 230px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit img.sushi{
+    width: 230px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.sushi_1{
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit>p.coffee_1{
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit img.mbti_1{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.mbti_3{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.postit>ul.mbti_4{
+    font-size: 25px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;
+    margin: 0;                    
+    padding-left: 14px;              
+    list-style-position: inside; 
+}
+.arrow_1{
+    position: fixed;
+    top: 78%;
+    right: 14%;
+    display: flex;
+    flex-direction: row;
+}
+.arrow_2{
+    width: 50px;
+    height: auto;
+}
+.arrow_1>p.arrow_3{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
