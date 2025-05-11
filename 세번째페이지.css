@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("배경화면/세번째페이지_배경화면.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    gap: 40px;
+}
+.intro1{
+}
+.intro1_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 8px;
+}
+.intro img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(패비콘/커서아이콘.png), auto;
+    transition: transform 0.2s ease;
+}
+.intro img:hover{
+    transform: translateY(-10px);
+}
+a{
+    text-decoration: none;
+}
+.intro3{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-weight: 900;
+    font-size: 5vh;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+.favorite1{
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    color: white;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+.favorite2{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+}
+.favorite2 img.favorite2_1{
+    width: 400px;
+    height: 200px;
+}
+.favorite2 img.favorite2_2{
+    width: 400px;
+    height: 200px;
+}
+.favorite2 img.favorite2_3{
+    width: 400px;
+    height: 200px;
+}
+.favorite3{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    gap: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    font-size: 26px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.favorite3 p.favorite3_1{
+    position: static;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 40px;
+}
+.favorite3 p.favorite3_2 {
+    margin-top: 30px;
+    font-size: 25px;
+}
