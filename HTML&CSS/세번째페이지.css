@@ -12,6 +12,7 @@ html {
     background-image: url("배경화면/세번째페이지_배경화면.png");
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 .intro{
     display:flex;
