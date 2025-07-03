@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/2ndPage_배경화면.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100vw;
+    height: 30vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Nav바 Home*/
+.navbar_1{
+    height: 30vh;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+/*nav바 목록*/
+.navbar_2{
+    height: 30vh;
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar_2_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+#navbar_2_1{
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    transform: translateY(-10px);
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+/*navbar 이벤트처리*/
+.navbar_2_1 img{
+    width: 3.3rem;
+    height: 3.3rem;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+/*information 구조정렬*/
+.information{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*왼쪽블럭(사진)꾸미기*/
+.left-content{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content > img{
+    width: 23vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*오른쪽블럭(테이블 및 토글)꾸미기*/
+.right-content{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*테이블 꾸미기*/
+table.information1{
+    width: 36vw;
+    height: 50vh;
+    color: white;
+    font-family: "sans-serif", cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-spacing: 1vw 1vh; /* 테이블 간격: 첫 번째 값은 가로 간격, 두 번째 값은 세로 간격 */
+    margin-right: 8vw;
+}
+
+.information2{
+    width: 36vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6rem;
+    margin-right: 8vw;
+}
+
+/*토글 아이콘 커서이벤트 처리*/
+.icon img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+.icon img:hover{
+    transform: translateY(-10px);
+}
+
+/*토글 상자*/
+.postit{
+    display: none;
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    background-color: blanchedalmond;
+    border: 1px solid #f0e1a0;
+    border-radius: 0.5rem;
+    padding: 12px;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+    z-index: 20;
+}
+
+.icon input[type="checkbox"]:checked ~ .postit{
+display: block;
+}
+
+/*화살표 꾸미기*/
+.arrow{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.arrow_1{
+    width: 3.3rem;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.arrow_2{
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: "sans-serif", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+}
+
+
+/*
+.information2_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.icon-item{
+    position: relative;
+}
+
+.postit>p{
+    display: flex;
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: flex-start;
+    margin: 0;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit>p:first-child{
+    font-size: 32px;
+}
+.postit img.hobby_4 {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit img.hobby_3{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.hobby_1{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 32px;
+}
+.postit>p.hobby_2{
+    align-items: flex-start;
+    text-align: left;
+    font-size: 20px;
+}
+.icon input[type="checkbox"]:checked ~ .postit {
+display: block;
+}
+.postit img.coffee {
+    width: 230px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit img.sushi{
+    width: 230px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.sushi_1{
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit>p.coffee_1{
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;    
+}
+.postit img.mbti_1{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.postit>p.mbti_3{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.postit>ul.mbti_4{
+    font-size: 25px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 800;
+    color: black;
+    margin: 0;                    
+    padding-left: 14px;              
+    list-style-position: inside; 
+}
+*/
