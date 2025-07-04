@@ -108,6 +108,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .left-content > img{
@@ -169,14 +170,21 @@ table.information1{
 
 /*토글 상자*/
 .postit{
+    background-color: blue;
     display: none;
-    position: absolute;
-    width: 40vw;
-    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 58vh;
     background-color: blanchedalmond;
     border: 1px solid #f0e1a0;
     border-radius: 0.5rem;
-    padding: 12px;
+    position: fixed;
+    top: 55%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 자신의 크기의 절반만큼 위·왼쪽으로 이동 */
+    padding: 0.2rem;
     cursor: pointer;
     cursor: url(../image/cursor_event.png), auto;
     transition: transform 0.2s ease;
@@ -184,8 +192,105 @@ table.information1{
 }
 
 .icon input[type="checkbox"]:checked ~ .postit{
-display: block;
+display: flex;
 }
+
+/*취미 토글*/
+.hobby_title{
+    width: 35vw;
+    height: 6vh;
+    font-family: "sans-serif", cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;   
+}
+
+.hobby_1{
+    width: 35vw;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    color: black;   
+}
+
+.hobby_1_1{
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#hobby_img_1{
+    width: auto;
+    height: 10vh;  
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.hobby_1_2{
+    font-size: 1.2rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 700;
+    color: black;   
+    margin-top: 3vh;
+}
+
+.hobby_2{
+    width: 35vw;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    color: black;   
+}
+
+.hobby_2_1{
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#hobby_img_2{
+    width: auto;
+    height: 10vh;  
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.hobby_2_2{
+    font-size: 1.2rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 700;
+    color: black;   
+    margin-top: 3vh;
+}
+
+/*좋아하는것 토글*/
+.favorite_title{
+    width: 35vw;
+    height: 6vh;
+    font-family: "sans-serif", cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;   
+}
+
 
 /*화살표 꾸미기*/
 .arrow{
@@ -211,60 +316,7 @@ display: block;
     background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
 }
 
-
 /*
-.information2_1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin-top: 50px;
-}
-
-.icon-item{
-    position: relative;
-}
-
-.postit>p{
-    display: flex;
-    flex-direction: column;       
-    align-items: center;          
-    justify-content: flex-start;
-    margin: 0;
-    font-family: 'Nanum Brush Script', cursive;
-    font-weight: 800;
-    color: black;    
-}
-.postit>p:first-child{
-    font-size: 32px;
-}
-.postit img.hobby_4 {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    pointer-events: none;
-}
-.postit img.hobby_3{
-    width: 200px;
-    height: auto;
-    object-fit: contain;
-    pointer-events: none;
-}
-.postit>p.hobby_1{
-    align-items: flex-start;
-    text-align: left;
-    font-weight: 800;
-    font-size: 32px;
-}
-.postit>p.hobby_2{
-    align-items: flex-start;
-    text-align: left;
-    font-size: 20px;
-}
-.icon input[type="checkbox"]:checked ~ .postit {
-display: block;
-}
 .postit img.coffee {
     width: 230px;
     height: auto;
