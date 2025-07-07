@@ -316,51 +316,109 @@ display: flex;
     background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
 }
 
-/*
-.postit img.coffee {
-    width: 230px;
-    height: auto;
-    object-fit: contain;
+/*favorite gird로 정렬해보기*/
+.favorite{
+    width: 35vw;
+    height: 58vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr; /* 3행 높이 비율*/
+    grid-template-columns: 1fr 1fr; /* 2열 너비 비율 */
+    gap: 1rem;
+}
+
+.favorite_title {
+    grid-column: 1 / span 2; /* 제목이 2칸 차지 */
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center; /* 세로 중앙 */
+}
+
+.favorite_sub_title {
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.favorite > div:not(.favorite_title) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.favorite .favorite_img{
+    width: 8rem;
+    height: 8rem;  
+    object-fit: cover;
     pointer-events: none;
 }
-.postit img.sushi{
-    width: 230px;
-    height: auto;
-    object-fit: contain;
-    pointer-events: none;
+
+/*mbti 토글*/
+.mbti{
+    width: 35vw;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
-.postit>p.sushi_1{
-    font-size: 30px;
-    font-family: 'Nanum Brush Script', cursive;
-    font-weight: 800;
-    color: black;    
-}
-.postit>p.coffee_1{
-    font-size: 30px;
-    font-family: 'Nanum Brush Script', cursive;
-    font-weight: 800;
-    color: black;    
-}
-.postit img.mbti_1{
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    pointer-events: none;
-}
-.postit>p.mbti_3{
-    align-items: flex-start;
-    text-align: left;
-    font-weight: 800;
-    font-size: 25px;
-    margin-top: 20px;
-}
-.postit>ul.mbti_4{
-    font-size: 25px;
-    font-family: 'Nanum Brush Script', cursive;
+
+.mbti_title{
+    width: 35vw;
+    height: 6vh;
+    font-family: "sans-serif", cursive;
+    font-size: 2rem;
     font-weight: 800;
     color: black;
-    margin: 0;                    
-    padding-left: 14px;              
-    list-style-position: inside; 
+    text-align: center;   
 }
-*/
+
+.mbti_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 26vh;
+}
+
+.mbti_1 > .mbti_img{
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.mbti_2{
+    width: 35vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    color: black;   
+}
+
+.mbti_3{
+    box-sizing: border-box;
+    width: 35vw;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: "sans-serif", cursive;
+    font-weight: 800;
+    color: black;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;   
+    padding-left: 1rem;
+}
