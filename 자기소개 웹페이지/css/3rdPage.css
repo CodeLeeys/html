@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/3rdPage_배경화면.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100vw;
+    height: 30vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Nav바 Home*/
+.navbar_1{
+    height: 30vh;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+/*nav바 목록*/
+.navbar_2{
+    height: 30vh;
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar_2_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+#navbar_2_1{
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    transform: translateY(-10px);
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+/*navbar 이벤트처리*/
+.navbar_2_1 img{
+    width: 3.3rem;
+    height: 3.3rem;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+.content{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorite_title{
+    box-sizing: border-box;
+    width: 35vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "sans-serif", cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.5rem;
+}
+
+.favorite{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7vw;
+    padding: 1rem;
+}
+
+.favorite_box{
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    font-family: "sans-serif", cursive;
+    font-size: 1rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.favorite .favorite_img{
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.favorite_sub_title{
+    box-sizing: border-box;
+    width: 16vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "sans-serif", cursive;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.3rem;
+}
+
+.favorite_des{
+    box-sizing: border-box;
+    width: 25vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "sans-serif", cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
+    border-radius: 0.5rem;
+}

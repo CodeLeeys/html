@@ -4,78 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개 웹페이지</title>
-    <link rel="icon" href="패비콘/파비콘64px.png" type="image/png">
-    <link rel="stylesheet" href="세번째페이지.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="image/패비콘.png" type="image/png">
+    <link rel="stylesheet" href="css/3rdPage.css">
+    <!-- 구글 폰트 서버에 미리 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- 구글 폰트 파일 서버에 미리 연결 (CORS 포함) -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="intro">
-            <a href="시작페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Home">
-                    <div class="intro1_1">Home</div>   
-                </div>
-            </a>
-            <a href="두번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="About">
-                    <div class="intro1_1">About</div>
-                </div>
-            <a href="세번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Favorite">
-                    <div class="intro1_1">Favorite</div>
-                </div>
-            </a>
-            <a href="네번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Goal">
-                    <div class="intro1_1">Goal</div>
-                </div>
-            </a>
-            <a href="마지막페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Contact">
-                    <div class="intro1_1">Contact</div>
-                </div>
-            </a>
-        </div>
-        <div class="intro3">
-            <h1>Favorite</h1>
-        </div>
-        <div class="favorite1">제가 좋아하는 3가지를 소개합니다.</div>
-        <div class="favorite2">
-            <img class="favorite2_1" src="패비콘/입체기동장치.gif" alt="진격의거인">
-            <img class="favorite2_2" src="패비콘/젤다 야숨.gif" alt="젤다">
-            <img class="favorite2_3" src="패비콘/포켓몬스터.gif" alt="포켓몬스터">
-        </div>
-        <div class="favorite3">
-            <div>
-                <p class="favorite3_1">진격의거인</p>
-                <p class="favorite3_2">
-                    가장 좋아하는 애니메이션이에요.<br> 
-                    사람을 잡아먹는 거인을 주제로 싸우는 주인공이 인상적이에요.
-                </p>
+        <div class="navbar">
+            <div class="navbar_1">
+                <h1>Favorite</h1>
             </div>
-            <div>
-                <p class="favorite3_1">젤다의 전설 시리즈</p>
-                <p class="favorite3_2">
-                    닌텐도 시그니처 게임 타이틀로 유명하죠?<br>
-                    하면서 너무너무 재미있었고 가끔은 어떻게 프로그래밍으로<br>
-                    이런 게임을 만들었는지 코드 뜯어보고 싶어요.<br>
-                </p>
+            <div class="navbar_2">
+                <a href="index.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Home">
+                        <div id="navbar_2_1">Home</div>   
+                    </div>
+                </a>
+                <a href="2ndPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="About">
+                        <div id="navbar_2_1">About</div>
+                    </div>
+                </a>
+                <a href="3rdPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Favorite">
+                        <div id="navbar_2_1">Favorite</div>
+                    </div>
+                </a>
+                <a href="4thPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Goal">
+                        <div id="navbar_2_1">Goal</div>
+                    </div>
+                </a>
+                <a href="5thPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Contact">
+                        <div id="navbar_2_1">Contact</div>
+                    </div>
+                </a>
             </div>
-            <div>
-                <p class="favorite3_1">포켓몬스터 시리즈</p>
-                <p class="favorite3_2">
-                닌텐도에서 주력으로 밀고 있는 또다른 게임 타이틀입니다.<br>
-                초등학교&중학교때 입문해서 지금까지도 꾸준히 할정도로<br>
-                인기있고 잘 만든 게임입니다.<br>
-                </p>
+            <div class="navbar_1"></div>
+        </div>
+        <div class="content">
+            <div class="favorite_title">제가 좋아하는 3가지를 소개합니다.</div>
+            <div class="favorite">
+                <div class="favorite_box">
+                    <img class="favorite_img" src="image/Favorite_Titan.gif" alt="진격의거인">
+                    <div class="favorite_sub_title">진격의거인</div>
+                    <div class="favorite_des">
+                        가장 좋아하는 애니메이션이에요.
+                        사람을 잡아먹는 거인을 주제로 싸우는 주인공이 인상적이에요.
+                    </div>
+                </div>
+                <div class="favorite_box">
+                    <img class="favorite_img" src="image/Favorite_Zelda.gif" alt="젤다의전설">
+                    <div class="favorite_sub_title">젤다의 전설 시리즈</div>
+                    <div class="favorite_des">
+                        닌텐도 시그니처 게임 타이틀로 유명하죠?
+                        하면서 너무너무 재미있었고 가끔은 어떻게 프로그래밍으로
+                        이런 게임을 만들었는지 코드 뜯어보고 싶어요.
+                    </div>
+                </div>
+                <div class="favorite_box">
+                    <img class="favorite_img" src="image/Favorite_Pokemon.gif" alt="포켓몬스터">
+                    <div class="favorite_sub_title">포켓몬스터 시리즈</div>
+                    <div class="favorite_des">
+                        닌텐도에서 주력으로 밀고 있는 또다른 게임 타이틀입니다.
+                        초등학교&중학교때 입문해서 지금까지도 꾸준히 할정도로
+                        인기있고 잘 만든 게임입니다.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
