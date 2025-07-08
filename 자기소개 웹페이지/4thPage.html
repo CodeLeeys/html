@@ -4,88 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개 웹페이지</title>
-    <link rel="icon" href="패비콘/파비콘64px.png" type="image/png">
-    <link rel="stylesheet" href="네번째페이지.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="image/패비콘.png" type="image/png">
+    <link rel="stylesheet" href="css/4thPage.css">
+    <!-- 구글 폰트 서버에 미리 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- 구글 폰트 파일 서버에 미리 연결 (CORS 포함) -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="intro">
-            <a href="시작페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Home">
-                    <div class="intro1_1">Home</div>   
-                </div>
-            </a>
-            <a href="두번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="About">
-                    <div class="intro1_1">About</div>
-                </div>
-            <a href="세번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Favorite">
-                    <div class="intro1_1">Favorite</div>
-                </div>
-            </a>
-            <a href="네번째페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Goal">
-                    <div class="intro1_1">Goal</div>
-                </div>
-            </a>
-            <a href="마지막페이지.html">
-                <div class="intro1">
-                    <img src="패비콘/액션 아이콘.png" alt="몬스터볼" title="Contact">
-                    <div class="intro1_1">Contact</div>
-                </div>
-            </a>
-        </div>
-        <div class="intro3">
-            <h1>Goal</h1>
-        </div>
-        <div class="goal1">제 목표는요...</div>
-        <div class="goal">
-            <div class="goal2">
-                <img class="goal2_1" src="패비콘/a+.png" alt="학점">
-                <img class="goal2_2" src="패비콘/토익.png" alt="토익">
-                <img class="goal2_3" src="패비콘/PCCE.png" alt="pcce">
+        <div class="navbar">
+            <div class="navbar_1">
+                <h1>Goal</h1>
             </div>
-            <div class="goal3">
-                <div>
-                    <p class="goal3_1">학점 4.2/4.5 이상 달성</p>
-                    <dl class="goal3_2">
-                        <dt>이유</dt>
-                        <dd>전공에 대한 깊은 이해와 꾸준한 자기 관리 증명</dd>
-                        <dt>계획</dt>
-                        <dd>
-                            강의 열심히 듣고 스터디와 복습을 병행<br>
-                            실전을 위한 팀 프로젝트 적극적으로 참여<br>
-                        </dd>
-                    </dl>
+            <div class="navbar_2">
+                <a href="index.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Home">
+                        <div id="navbar_2_1">Home</div>   
+                    </div>
+                </a>
+                <a href="2ndPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="About">
+                        <div id="navbar_2_1">About</div>
+                    </div>
+                </a>
+                <a href="3rdPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Favorite">
+                        <div id="navbar_2_1">Favorite</div>
+                    </div>
+                </a>
+                <a href="4thPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Goal">
+                        <div id="navbar_2_1">Goal</div>
+                    </div>
+                </a>
+                <a href="5thPage.html">
+                    <div class="navbar_2_1">
+                        <img src="image/navbar_icon.png" alt="몬스터볼" title="Contact">
+                        <div id="navbar_2_1">Contact</div>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar_1"></div>
+        </div>
+        <div class="content">
+            <div class="goal_title">제 목표는요...</div>
+            <div class="goal">
+                <div class="goal_box">
+                    <img class="goal_img" src="image/goal_GPA.png" alt="학점">
+                    <div class="goal_sub_title">학점 4.2/4.5 이상 달성</div>
+                    <div class="goal_des_box">
+                        <dl class="goal_des">
+                            <dt>이유</dt>
+                            <dd>전공에 대한 깊은 이해와 꾸준한 자기 관리 증명</dd>
+                            <dt>계획</dt>
+                            <dd>
+                                강의 열심히 듣고 스터디와 복습을 병행<br>
+                                실전을 위한 팀 프로젝트 적극적으로 참여<br>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
-                <div>
-                    <p class="goal3_1">토익점수 800점 이상 달성</p>
-                    <dl class="goal3_3">
-                        <dt>이유</dt>
-                        <dd> 글로벌 IT 기업 취업이 목표라면 선택이 아닌 필수!!</dd>
-                        <dt>계획</dt>
-                        <dd>매일 영단어를 암기 및 토익 인강 시청</dd>
-                    </dl>
+                <div class="goal_box">
+                    <img class="goal_img" src="image/goal_TOEIC.png" alt="토익">
+                    <div class="goal_sub_title">토익점수 800점 이상 달성</div>
+                    <div class="goal_des_box">
+                        <dl class="goal_des">
+                            <dt>이유</dt>
+                            <dd> 글로벌 IT 기업 취업이 목표라면 선택이 아닌 필수!!</dd>
+                            <dt>계획</dt>
+                            <dd>매일 영단어를 암기 및 토익 인강 시청</dd>
+                        </dl>
+                    </div>
                 </div>
-                <div>
-                    <p class="goal3_1">PCCE 700점 이상 달성</p>
-                    <dl class="goal3_4">
-                        <dt>이유</dt>
-                        <dd>프로그래밍 실력을 증명하는 첫걸음</dd>
-                        <dt>계획</dt>
-                        <dd> 매주 3문제 이상 알고리즘 풀이</dd>
-                    </dl>       
+                <div class="goal_box">
+                    <img class="goal_img" src="image/goal_PCCE.png" alt="코딩테스트">
+                    <div class="goal_sub_title">PCCE 700점 이상 달성</div>
+                    <div class="goal_des_box">
+                        <dl class="goal_des">
+                            <dt>이유</dt>
+                            <dd>프로그래밍 실력을 증명하는 첫걸음</dd>
+                            <dt>계획</dt>
+                            <dd> 매주 3문제 이상 알고리즘 풀이</dd>
+                        </dl>       
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>
