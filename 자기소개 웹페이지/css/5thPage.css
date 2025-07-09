@@ -11,7 +11,7 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: url("../image/index_배경화면.png");
+    background-image: url("../image/5thPage_배경화면.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -91,8 +91,7 @@ a:hover{
     transition: transform 0.2s ease;
 }
 
-/*내용*/
-.intro{
+.content{
     width: 100vw;
     height: 70vh;
     display: flex;
@@ -102,30 +101,43 @@ a:hover{
     gap: 3vh;
 }
 
-.intro_1{
+.upper_content{
     overflow: hidden;
     color: white;
     font-size: 6.5rem;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
-    font-style: normal; /*글꼴 기울임 여부*/
-    white-space: nowrap; /*자동 줄바꿈 방지*/
+    font-style: normal;
+    white-space: nowrap;
     width: 0;
     text-align: center;
-    animation: typing 2s steps(18, end) forwards;
+    animation: 
+    typing 2s steps(10, end) forwards;
 }
 @keyframes typing{
     from {width: 0}
-    to {width:18ch}
+    to {width:10ch}
 }
 
-.intro_2{
-    color: white;
-    font-family: "sans-serif", cursive;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.2); /* 반투명 블랙 */
-    border-radius: 0.5rem;
-    padding: 1rem;
+.lower_content{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6vw;
+}
+
+.contact_img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
+    transition: transform 0.2s ease;
+}
+
+.contact_img:hover{
+    transform: translateY(-1vh);
 }
