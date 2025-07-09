@@ -170,7 +170,6 @@ table.information1{
 
 /*토글 상자*/
 .postit{
-    background-color: blue;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -185,13 +184,10 @@ table.information1{
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 자신의 크기의 절반만큼 위·왼쪽으로 이동 */
     padding: 0.2rem;
-    cursor: pointer;
-    cursor: url(../image/cursor_event.png), auto;
-    transition: transform 0.2s ease;
     z-index: 20;
 }
 
-.icon input[type="checkbox"]:checked ~ .postit{
+.icon input[type="radio"]:checked ~ .postit{
 display: flex;
 }
 
@@ -421,4 +417,13 @@ display: flex;
     margin: 0;
     padding: 0;   
     padding-left: 1rem;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    cursor: url(../image/cursor_event.png), auto;
 }
